@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lauki-voice-agent"
+version = "1.0.0"
+description = "Voice-enabled customer support agent for Lauki Phones"
+requires-python = ">=3.12"
+
+dependencies = [
+    # LiveKit & Voice
+    "livekit-agents>=1.0",
+    "livekit-plugins-deepgram",
+    "livekit-plugins-inworld",
+    "livekit-plugins-langchain",
+
+    # LangChain & LLM
+    "langchain",
+    "langchain-groq",
+
+    # Vector DB & Embeddings
+    "qdrant-client",
+    "sentence-transformers",
+
+    # Document Processing
+    "docling",
+
+    # Utilities
+    "python-dotenv",
+    "pydantic-settings",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["langchain_agent", "voice_agent"]

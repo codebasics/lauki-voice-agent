@@ -1,0 +1,93 @@
+# Environment
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Vector Database & Temporary
+/tmp/
+/temp/
+/tmp_docs/
+.qdrant/
+*.qdrant
+*.db
+
+# Document Ingestion
+/data/
+/downloads/
+*.pdf
+!docs/*.pdf
+*.docx
+
+# Logs
+*.log
+logs/
+*.pot
+
+# Local development
+.node_modules/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS
+Thumbs.db
+.DS_Store
+*.bak
+
+# Credentials & Secrets
+.credentials/
+secrets/
+*.key
+*.pem
+.env
+*.lock
