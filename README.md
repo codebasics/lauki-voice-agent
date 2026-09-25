@@ -24,6 +24,9 @@ uv sync  # or: pip install -e .
 cp .env.example .env
 # Edit .env with your LiveKit and Groq credentials
 
+# Activate virtual env
+source .venv/bin/activate
+
 # Ingest PDF documents into vector DB
 python ingest.py
 
